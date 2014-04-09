@@ -33,7 +33,7 @@ public class AlgorithmComplexityInspection extends BaseInspection {
                         if (annotation == null)
                             annotation = modifiers.findAnnotation("org.jetbrains.complexity.Linear");
                         if (annotation == null)
-                            annotation = modifiers.findAnnotation("org.jetbrains.complexity.LogLinear");
+                            annotation = modifiers.findAnnotation("org.jetbrains.complexity.Logarithmic");
                         if (annotation == null)
                             annotation = modifiers.findAnnotation("org.jetbrains.complexity.Quadratic");
                         if (annotation != null) {
@@ -41,7 +41,7 @@ public class AlgorithmComplexityInspection extends BaseInspection {
                             PsiCodeBlock body = method.getBody();
                             if (body != null) {
                                 int bodyComplexity = getNestedLoopsNumber(body.getStatements(), parameter, 0);
-                                if (!methodComplexity.isInbound(bodyComplexity)) {
+                                if (!methodComplexity.allowsNestedLoops(bodyComplexity)) {
                                     registerError(annotation);
                                 }
                             }

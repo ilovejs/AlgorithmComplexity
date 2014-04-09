@@ -77,7 +77,7 @@ static int max(@Linear int[] arr) {
 
 static int factorial(@Linear int n) {
     if (n == 0) return 1;
-    return n * factorial(n - 1); // TODO: detect exponential complexity
+    return n * factorial(n - 1); // TODO: detect factorial complexity
 }
 
 static HashMap<Integer, Integer> cache = new HashMap<Integer, Integer>();
