@@ -3,7 +3,7 @@ Algorithm Complexity
 
 Annotations library for Java enables you to document algorithm complexity for your methods.
 
-It comes with an IntelliJ IDEA plugin which detects trivial algorithm complexity problems based on the annotations.
+It comes with an IntelliJ IDEA plugin which detects trivial algorithm complexity problems in your code based on defined annotations.
 
 ## Example:
 
