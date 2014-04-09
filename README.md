@@ -1,7 +1,9 @@
 Algorithm Complexity
 ===================
 
-A plugin for IntelliJ IDEA which detects trivial algorithm complexity problems in your code.
+Annotations library for Java which lets you document algorithm complexity for your code.
+
+It also comes with an IntelliJ IDEA plugin which detects trivial algorithm complexity problems based on defined annotations.
 
 ## Example:
 
