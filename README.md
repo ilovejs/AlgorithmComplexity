@@ -12,7 +12,7 @@ Java annotations library which lets you document contract of your methods in ter
 - @Exponential
 - @Factorial
 
-The library comes with IntelliJ IDEA plugin that analyzes your code and in trivial cases informs about algorithm complexity problems.
+The library comes with IntelliJ IDEA plugin that analyzes your code and in trivial cases informs about algorithm complexity complexity related contracts that have been violated.
 
 ## Example:
 
